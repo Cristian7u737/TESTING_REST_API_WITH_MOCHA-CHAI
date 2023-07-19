@@ -1,0 +1,36 @@
+{
+  "name": "REST_API_EXPRESS_SEQUELIZE CONTROL_ESCOLAR",
+  "version": "1.0.0",
+  "description": "API REST para control escolar",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon./server.js",
+    "test": "mocha ./src/test/test.test.js"
+  },
+  "keywords": [
+    "Express",
+    "MySQL",
+    "Sequelize",
+    "Node",
+    "Js",
+    "Bcrypt",
+    "Mocha",
+    "Chai"
+  ],
+  "author": "ING. Cristian Nochebuena Chavarría",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.25.5"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0"
+  }
+}
