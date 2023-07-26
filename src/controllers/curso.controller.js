@@ -58,7 +58,7 @@ const createCurso = async (req, res) => {
             return res.json({ mensaje: `El Curso con el nombre : ${nombreCurso} ya existe.` }); /* si esta repetido se lo indica */
         } else {
             const newCurso = await Curso.create({ nombreCurso, precioCurso, dateCurso }); /* Crea el Curso apartir del req.body */
-            return res.status(201).json(newCurso); /* responde la solicitud con lo que creo en newCurso */
+            return res.status(200).json(newCurso); /* responde la solicitud con lo que creo en newCurso */
         }
     } catch (error) {
         res.status(500).json([{ error: error.message }]);

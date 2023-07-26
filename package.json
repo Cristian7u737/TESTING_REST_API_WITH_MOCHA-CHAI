@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "nodemon./server.js",
-    "test": "mocha ./src/test/test.test.js"
+    "test": "mocha ./src/test/"
   },
   "keywords": [
     "Express",

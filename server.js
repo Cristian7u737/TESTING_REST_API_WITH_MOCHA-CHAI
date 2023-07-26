@@ -12,7 +12,7 @@ export const app = express(); /* para crear una aplicación usando express */
 /* analizar solicitudes de tipo de contenido - application/json */
 app.use(express.json()); /* es una función de middleware integrada en Express. Analiza las solicitudes entrantes con cargas JSON y se basa en body-parser */  
 /* simple ruta */
-app.get('/', (req, res) => res.json({ message: 'Hello World!' }));
+app.get('/', (req, res) => res.json({ message: 'Servidor corriendo en http//localhost:3000' }));
 
 /* utilizar los enrutadores */
 app.use(routerAlumno);
