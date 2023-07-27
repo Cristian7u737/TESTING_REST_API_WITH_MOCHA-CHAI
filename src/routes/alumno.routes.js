@@ -5,7 +5,7 @@ const routerAlumno = Router();
 routerAlumno.get('/alumnos/', findAllAlumnos );
 routerAlumno.get('/alumno/:id', findAlumnoById );
 routerAlumno.post('/alumno/create/:id/curso/:id/profesor', createAlumnoByIdCursoAndByIdProfesor );
-routerAlumno.put('/alumno/update/:id/curso/:id/alumno', updateAlumnoById );
+routerAlumno.put('/alumno/update/:id/curso/:id/profesor/:id/alumno', updateAlumnoById );
 routerAlumno.delete('/alumno/delete/:id', deleteAlumnoById );
 
 export default routerAlumno;
